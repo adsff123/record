@@ -1,0 +1,10 @@
+<h1>보낸 메일함</h1>
+<% @every_post.each do |e|%>
+보낸사람 : <%= e.sender %> <br>
+받는사람 : <%= e.receiver %> <br>
+제목 : <%= e.title %> <br>
+내용 : <%= e.content %> <br>
+시간 : <%= e.created_at %>
+<hr>
+<% end %>
+<h1><a href="/">메일 다시 보내기</a></h1>
